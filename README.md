@@ -1,27 +1,22 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The objective of this project is to learn how to use Redux and Zustand
+Also see the diference between both libs
 
-Currently, two official plugins are available:
+To simulate a real application, this project has a course player with API requests, all make with JSON Server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to run this project
 
-## Expanding the ESLint configuration
+### Switch branches to choose zustand or redux
+### Run: npm install -> To install all dependencies
+### Run: npm run server-> To initiate JSON server
+### Run: npm run dev-> To initiate frontend
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+# Application visual
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![image](https://github.com/vicentemattos1/redux-zustand/assets/48080194/723ca832-11b2-45bd-810f-084e0a330f38)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/vicentemattos1/redux-zustand/assets/48080194/f8b98e17-2619-4425-91ed-cd450f0d1b0c)
+
+![image](https://github.com/vicentemattos1/redux-zustand/assets/48080194/936da15c-d479-473b-a31e-c1198c75bc48)

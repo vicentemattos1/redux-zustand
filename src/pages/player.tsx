@@ -2,18 +2,23 @@ import { MessageCircle } from 'lucide-react';
 import { Header } from '../components/Header';
 import { Video } from '../components/Video';
 import { Module } from '../components/Module';
-import { useCurrentPlaying } from '../store/slices/player';
+import { loadCourse, useCurrentPlaying } from '../store/slices/player';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store';
+import { RootState, useAppDispatch } from '../store';
 
 export const Player = () => {
-  const modules = useSelector((state: RootState) => state.player.course.modules);
+  const dispatch = useAppDispatch();
+  const modules = useSelector((state: RootState) => state.player.course?.modules);
   const { currentLesson } = useCurrentPlaying();
 
   useEffect(() => {
-    document.title = `Assistindo: ${currentLesson.title}`;
+    document.title = `Assistindo: ${currentLesson?.title}`;
   }, [currentLesson]);
+
+  useEffect(() => {
+    dispatch(loadCourse());
+  }, []);
 
   return (
     <div className="h-screen bg-zinc-950 text-zinc-50 flex justify-center items-center">
@@ -30,7 +35,7 @@ export const Player = () => {
             <Video />
           </div>
           <aside className="absolute top-0 bottom-0 right-0 w-80 border-l divide-y-2 divide-zinc-900 border-zinc-800 bg-zinc-900 scrollbar scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-800 overflow-y-scroll">
-            {modules.map((module, index) => (
+            {modules?.map((module, index) => (
               <Module
                 key={module.id}
                 moduleIndex={index}
