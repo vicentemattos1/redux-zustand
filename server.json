@@ -1,0 +1,61 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "modules": [
+        {
+          "id": 1,
+          "title": "Iniciando com React",
+          "lessons": [
+            {
+              "id": "Jai8w6K_GnY",
+              "title": "Aprendendo React",
+              "duration": "09:12"
+            },
+            {
+              "id": "w-DW4DhDfcw",
+              "title": "Aprendendo React I",
+              "duration": "06:33"
+            },
+            {
+              "id": "goipXUJCslU",
+              "title": "Aprendendo React II",
+              "duration": "10:05"
+            },
+            {
+              "id": "_6kxwm6x9wE",
+              "title": "Aprendendo React III",
+              "duration": "10:12"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Estrutura da aplicação",
+          "lessons": [
+            {
+              "id": "cbSHUVSUFgY",
+              "title": "Estrutura da aplicação",
+              "duration": "09:12"
+            },
+            {
+              "id": "EbFA4RQrc0w",
+              "title": "Estrutura da aplicação I",
+              "duration": "06:33"
+            },
+            {
+              "id": "YVI-q3idGiM",
+              "title": "Estrutura da aplicação II",
+              "duration": "10:05"
+            },
+            {
+              "id": "EbFA4RQrc0w",
+              "title": "Estrutura da aplicação III",
+              "duration": "10:12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
