@@ -1,4 +1,4 @@
-import { useCurrentPlaying } from '../store/slices/player';
+import { useCurrentPlaying } from '../zustand-store';
 
 export const Header = () => {
   const { currentLesson, currentModule, isLoading } = useCurrentPlaying();

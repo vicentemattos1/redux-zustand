@@ -24,63 +24,7 @@ interface PlayerState {
 }
 
 const initialState: PlayerState = {
-  course: {
-    id: 1,
-    modules: [
-      {
-        id: 1,
-        title: 'Iniciando com React',
-        lessons: [
-          {
-            id: 1,
-            title: 'Aprendendo React',
-            duration: '09:12',
-          },
-          {
-            id: 2,
-            title: 'Aprendendo React I',
-            duration: '06:33',
-          },
-          {
-            id: 3,
-            title: 'Aprendendo React II',
-            duration: '10:05',
-          },
-          {
-            id: 4,
-            title: 'Aprendendo React III',
-            duration: '10:12',
-          },
-        ],
-      },
-      {
-        id: 2,
-        title: 'Estrutura da aplicação',
-        lessons: [
-          {
-            id: 1,
-            title: 'Estrutura da aplicação',
-            duration: '09:12',
-          },
-          {
-            id: 2,
-            title: 'Estrutura da aplicação I',
-            duration: '06:33',
-          },
-          {
-            id: 3,
-            title: 'Estrutura da aplicação II',
-            duration: '10:05',
-          },
-          {
-            id: 4,
-            title: 'Estrutura da aplicação III',
-            duration: '10:12',
-          },
-        ],
-      },
-    ],
-  },
+  course: null,
   currentModuleIndex: 0,
   currentLessonIndex: 0,
   isLoading: true,
